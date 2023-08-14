@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="./assets/images/Mahender1.jpg" />
+  <title>Mahender Kumar</title>
+  <meta name="description" content="A portfolio template for the Unemployables community.">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/typography.css">
+  <link rel="stylesheet" href="./css/utilities.css">
+  <style>
+    body {
+      background-color:#f2f2f2 ;
+      color: black;
+    }
+    p {
+      text-align: justify;
+      line-height: 1.5;
+    }
+
+    /* Set the link color to white */
+    a {
+      color: blue;
+    }
+
+    /* Set the link hover color to a different color, e.g., light gray */
+    a:hover {
+      color: lightgray;
+    }
+
+    /* Set the button background color to white */
+    .button {
+      background-color: white;
+    }
+
+    /* Set the button text color to black */
+    .button-text {
+      color: black;
+    }
+
+    /* Set the arrow icon color to black */
+    .right-arrow-icon {
+      fill: black;
+    }
+
+    /* Style for the hover button */
+    .hover-button {
+      display: none;
+      position: fixed;
+      left: 20px; /* Adjust the left position as needed */
+      bottom: 20px;
+      background-color: SteelBlue ;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      z-index: 9999;
+    }
+
+    .hover-button:hover {
+      background-color: lightblue;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar"style="background-color: #404040 ;" >
+      <a class="nav-title-link" href="./index.html">
+        <!-- TODO - Change the "Portfolio Title" to whatever you want displayed in the top left -->
+        
+		<img src="./assets/images/Mahender1.jpg" class="circular-image-container-nav" width="50" height="50">
+		
+		
+	<a class="button" href="./Publication.html" style="background-color: CadetBlue  ;"> 
+          <span class="button-text">Publications</span>
+		
+	<a class="button" href="./Experiences.html" style="background-color: Thistle   ;">
+          <span class="button-text">Experiences</span>
+		
+	<a class="button" href="./Projects.html" style="background-color: CadetBlue;">
+          <span class="button-text">Projects</span>
+
+	<a class="button" href="./ProAct.html" style="background-color: Lavender ;">
+          <span class="button-text">Professional Activities</span>
+
+	<a class="button" href="./Award.html" style="background-color: CadetBlue;">
+          <span class="button-text">Awards and Fundings</span>
+
+	<a class="button" href="./LeisAct.html" style="background-color: LemonChiffon ;">
+          <span class="button-text">Leisure Activities</span>
+		
+         <!-- TODO - Change the email after 'mailto:' to your email address for contact -->
+        <a class="button" href="./Contact.html" style="background-color: CadetBlue;">
+          <span class="button-text">Contact Me</span>
+        </a>
+      </a>
+    </div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content"style ="text-align: justify">
+
+      <!-- PROJECT HEADER -->
+      <div id="project-header"  >
+        <div class="main-title">RAMONA: Responsive Additive Manufacture to Overcome Natural and Attack-based Disruption </div>
+        <div class="body-text" >The RAMONA aims to design and develop tools for monitoring, analyzing, assessing, and sharing intelligence related to threats and disruptions. One key feature is a Blockchain network with a double-lock system. The project has achieved several milestones, including the development of three subsystems: the Threat Impact and Risk Analyzer, the Distributed Ledger-based Crypto Anchor, and the Threat Information Exchange. These tools have significant implications for cybersecurity in additive manufacturing, identifying vulnerabilities, enhancing incident response capabilities, ensuring regulatory compliance, and fostering collaboration within the industry. They also contribute to preventing major cyber-attacks and reducing the overall cost of cybersecurity measures.</div>
+
+		<br><br><br>
+      <!-- IMAGE GALLERY -->
+      <div id="project-gallery">
+        <!-- TODO - Change the 'subheader-text' to whatever you want the Gallery section header to say -->
+       
+        <div class="project-gallery-content">
+		
+            <div class="gallery-image-container half-width">
+		<div class="subheader-text">Distributed Ledger-based Double Lock Integrity System.</div>
+              <img src="./assets/images/RAMONA.jpeg" class="gallery-image">
+              <span class="image-caption">The tool focuses on developing a double-lock integrity system that ensures a dual verification mechanism for confirming the protection of AM (Additive Manufacturing) components. 
+			  <br><br> It utilizes a private permissioned blockchain, specifically the Hyperledger Fabric, to establish a physical lock for preserving the integrity of the physical fingerprint and a digital lock for maintaining the integrity of the digital hash on the component's G-code digital file. 
+			  <br><br>The subsystem is supported by four smart contracts that facilitate various functionalities such as part authenticity verification, distributed off-chain storage of G-code, file integrity checks, and secure file downloads. </span>
+            </div>
+            <div class="gallery-image-container half-width">
+		<div class="subheader-text">Indicator of Compromises Evaluator</div>
+              <img src="./assets/images/RAMONA_2.png" class="gallery-image">
+              <span class="image-caption">The tool includes a Threat Impact Visualiser and Risk Exposure Analyser, which is responsible for real-time monitoring, assessment, and evaluation of threats and associated Indicators of Compromise (IOCs). 
+			  <br><br>It prioritizes the identified threats to provide valuable threat intelligence to the stakeholders..</span>
+            </div>
+        <div class="gallery-image-container half-width">
+		<div class="subheader-text"> BEPTIS: Blockchain Enabled Private Threat Intelligence Sharing Framework</div>
+              <img src="./assets/images/RAMONA_3.jpg" class="gallery-image">
+              <span class="image-caption">The tool allows organisations utilising cyber technologies like TAXII to share threat-related information and intelligence, particularly priority IOCs and integrity violation data. 
+			  <br><br> This subsystem's design has been successfully finished, and development is progressing.</span>
+            </div>
+        </div>
+		
+		<br><br><br>
+		<div class="gallery-image-container">
+		<div class="subheader-text"> How these Tools Impact the Additive Manufacturing Supply Chain</div>
+              
+			  These tools can have a tremendous impact on the cybersecurity area. These solutions support enterprises involved in additive manufacturing by detecting vulnerabilities, prioritising security initiatives, expanding incident response capabilities, guaranteeing regulatory compliance, and boosting reputation and consumer confidence.
+			  <br><br>These tools also offer the following important advantages:
+			  <ul>
+				<li>Facilitated cooperation and Threat Intelligence Exchange: Organisations may respond to threats more successfully by facilitating cooperation and prompt threat intelligence exchange within the AM sector.</li>
+				<br><li>Prevention of Significant Cyber Attacks: The technologies help guard against serious cyber-attacks that might result in detrimental outcomes, including intellectual property theft, sabotage, and damage to vital infrastructure.</li>
+				<br><li>Lower Cost of Cybersecurity: The AM sector can lower the total cost of cybersecurity measures by pooling threat intelligence and working more productively together.</li>
+			  </ul>
+	
+        </div>
+      
+	 
+	</div>
+    </div>
+	</div>
+
+    
+	
+	 <!-- FOOTER -->
+    <div id="footer" style="background-color: Thistle ;">
+	
+	<a class="icon-link" target="_blank" href="https://scholar.google.co.in/citations?user=4syrB4UAAAAJ&hl=en">
+        <image src="./assets/icons/googlescholar.png" class="footer-icon"/>
+      </a>
+
+	<a class="icon-link" target="_blank" href="https://github.com/mahend72">
+        <image src="./assets/icons/github.png" class="footer-icon"/>
+      </a>
+	
+	<a class="icon-link" target="_blank" href="https://www.linkedin.com/in/mahender-kumar-79a8234b/?originalSubdomain=in">
+        <image src="./assets/icons/linkedin1.png" class="footer-icon"/>
+      </a>
+	<a class="icon-link" target="_blank" href="https://www.researchgate.net/profile/Mahender-Kumar">
+        <image src="./assets/icons/researchGate.png" class="footer-icon"/>
+      </a>
+	
+      <a class="icon-link" target="_blank" href="https://www.instagram.com/mahend72kr/?igshid=MmIzYWVlNDQ5Yg%3D%3D">
+        <image src="./assets/icons/instagram.svg" class="footer-icon"/>
+      </a>
+
+      <a class="icon-link" target="_blank" href="https://twitter.com/Kumar17Mahi">
+        <image src="./assets/icons/twitter.svg" class="footer-icon"/>
+      </a>
+
+      <a class="icon-link" href="./Contact.html">
+        <image src="./assets/icons/mail.svg" class="footer-icon"/>
+      </a>
+	
+	<a class="icon-link" target="_blank" href="https://medium.com/@mahend72kr">
+        <image src="./assets/icons/medium-icon.svg" class="footer-icon"/>
+      </a>
+	  
+	<a class="icon-link" target="_blank" href="https://www.facebook.com/Mahend72kr">
+        <image src="./assets/icons/facebook.png" class="footer-icon"/>
+      </a>
+	 
+    </div>
+	
+	<script>
+    let prevScrollPos = window.pageYOffset;
+    window.onscroll = function() {
+      let currentScrollPos = window.pageYOffset;
+      if (prevScrollPos > currentScrollPos) {
+        // Scroll up
+        document.querySelector('.navbar').style.backgroundColor = '#404040';
+      } else {
+        // Scroll down
+        document.querySelector('.navbar').style.backgroundColor = 'rgba(0, 0, 0, 0)';
+      }
+      prevScrollPos = currentScrollPos;
+    };
+	</script>
+
+  <!-- Hover button -->
+
+ 
+ <button class="hover-button" onclick="scrollToTop()"><strong>Top</strong></button>
+  <script>
+    // JavaScript function to scroll to the top of the page
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Show/hide the hover button based on scrolling
+    window.addEventListener('scroll', function() {
+      var hoverButton = document.querySelector('.hover-button');
+      if (window.scrollY > 200) {
+        hoverButton.style.display = 'block';
+      } else {
+        hoverButton.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>
