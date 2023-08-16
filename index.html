@@ -9,93 +9,38 @@
   <link rel="stylesheet" href="./css/layout.css">
   <link rel="stylesheet" href="./css/typography.css">
   <link rel="stylesheet" href="./css/utilities.css">
-  <style>
-    body {
-      background-color:#f2f2f2 ;
-      color: black;
-    }
-    p {
-      text-align: justify;
-      line-height: 1.5;
-    }
-
-    /* Set the link color to white */
-    a {
-      color: blue;
-    }
-
-    /* Set the link hover color to a different color, e.g., light gray */
-    a:hover {
-      color: lightgray;
-    }
-
-    /* Set the button background color to white */
-    .button {
-      background-color: white;
-    }
-
-    /* Set the button text color to black */
-    .button-text {
-      color: black;
-    }
-
-    /* Set the arrow icon color to black */
-    .right-arrow-icon {
-      fill: black;
-    }
-
-    /* Style for the hover button */
-    .hover-button {
-      display: none;
-      position: fixed;
-      left: 20px; /* Adjust the left position as needed */
-      bottom: 20px;
-      background-color: SteelBlue ;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      cursor: pointer;
-      border-radius: 5px;
-      z-index: 9999;
-    }
-
-    .hover-button:hover {
-      background-color: lightblue;
-    }
-  </style>
 </head>
+
+
 <body>
-  <div class="navbar"style="background-color: #404040 ;" >
-      <a class="nav-title-link" href="./index.html">
-        <!-- TODO - Change the "Portfolio Title" to whatever you want displayed in the top left -->
-        
-		<img src="./assets/images/Mahender1.jpg" class="circular-image-container-nav" width="50" height="50">
-		
-		
-	<a class="button" href="./Publication.html" style="background-color: CadetBlue  ;"> 
-          <span class="button-text">Publications</span>
-		
-	<a class="button" href="./Experiences.html" style="background-color: Thistle   ;">
-          <span class="button-text">Experiences</span>
-		
-	<a class="button" href="./Projects.html" style="background-color: CadetBlue;">
-          <span class="button-text">Projects</span>
+<div class="navbar"style="background-color: #404040 ;" >
+  <a class="nav-title-link" href="./index.html">
+    <!-- TODO - Change the "Portfolio Title" to whatever you want displayed in the top left -->
+    <img src="./assets/images/Mahender1.jpg" class="circular-image-container-nav" width="50" height="50">
+  </a>
 
-	<a class="button" href="./ProAct.html" style="background-color: Lavender ;">
-          <span class="button-text">Professional Activities</span>
+  <!-- Dropdown menu for Publications -->
+  <div class="dropdown">
+    <a class="button"><span class="button-text">Check out my complete profile</span></a>
+    <div class="dropdown-content">
+      <a href="./Publication.html" style="background-color: #555555   ;">Publications</a>
+      <a href="./Experiences.html" style="background-color: #666666  ;">Experiences</a>
+      <a href="./Projects.html" style="background-color: #999999;">Projects</a>
+	  <a href="./ProAct.html" style="background-color: #CCCCCC ;">Professional Activities</a>
+      <a href="./Award.html" style="background-color: #DDDDDD;">Awards and Fundings</a>
+      <a href="./LeisAct.html" style="background-color: #E5E5E5 ;">Leisure Activities</a>
 
-	<a class="button" href="./Award.html" style="background-color: CadetBlue;">
-          <span class="button-text">Awards and Fundings</span>
-
-	<a class="button" href="./LeisAct.html" style="background-color: LemonChiffon ;">
-          <span class="button-text">Leisure Activities</span>
-		
-         <!-- TODO - Change the email after 'mailto:' to your email address for contact -->
-        <a class="button" href="./Contact.html" style="background-color: CadetBlue;">
-          <span class="button-text">Contact Me</span>
-        </a>
-      </a>
     </div>
+  </div>
+
+  <!-- Contact Me button -->
+  <a class="button" href="./Contact.html">
+    <span class="button-text">Contact Me</span>
+  </a>
+</div>
+
+<!-- ... rest of your content ... -->
+
 
     <!-- MAIN PAGE CONTENT -->
     <div id="main-content">
@@ -117,19 +62,24 @@
     <div id="about-section">
         <span class="subheader-text"><strong> Biography</strong></span>
         <div class="about-section-content" style=" text-align: justify;">
+		<ul>
+			<li> I am a research fellow at Warwick Manufacturing Group, University of Warwick, UK, where I lead multiple projects. One of my completed projects was delivered with the Defence Science and Technology Laboratory - GOV.UK. </li>
+		  <br>
+		  <li> I'm also engaged as a Research Associate at The Alan Turing Institute in London, United Kingdom. Here, I am exploring homomorphic encryption techniques to enhance privacy within digital identity platforms. </li>
+		  <br>
+		  <li>I received my PhD from Jawaharlal Nehru University, New Delhi, India where I explored a deep understanding of Pairing-Friendly Elliptic Curves and developed several privacy-preserving cryptographic models for many use cases. </li>
+		  PhD Thesis:
+			<a href="https://arxiv.org/pdf/2307.09610.pdf">"<em>Design and Analysis of Pairing-Friendly Elliptic Curves for Cryptographic Primitives</em>"</a></li>
+		  <br><br>
+		  <li>I also received my Master's degree from Jawaharlal Nehru University, where I worked on the key escrow problem in identity-based encryption.</li>
+		  Master Dissertation: <a href="https://arxiv.org/ftp/arxiv/papers/2307/2307.02411.pdf">"<em>An Approach to Remove Key Escrow Problem in ID-based Encryption from Pairing</em>"</a>
+			<br><br>
+			<li> I gained valuable teaching experience as a Lecturer in Computer Science at a Delhi Government School. </li>
+			<br>
+			<li>I also worked as a Junior Research Fellow, funded by the prestigious Council of Scientific & Industrial Research (CSIR), providing a solid foundation for further growth. I was then appointed as a Senior Research Fellow. </li>
+		</ul>
           
-		  <p> I am a research fellow at Warwick Manufacturing Group, University of Warwick, UK, where I lead multiple projects. One of my completed projects was delivered with the Defence Science and Technology Laboratory - GOV.UK. 
 		  
-		  <br><br> I'm also engaged as a Research Associate at The Alan Turing Institute in London, United Kingdom. Here, I am exploring homomorphic encryption techniques to enhance privacy within digital identity platforms.
-		  
-		  <br><br>I received my PhD from Jawaharlal Nehru University, New Delhi, India where I explored a deep understanding of Pairing-Friendly Elliptic Curves and developed several privacy-preserving cryptographic models for many use cases. 
-		  <br>PhD Thesis:
-			<a href="https://arxiv.org/pdf/2307.09610.pdf">"<em>Design and Analysis of Pairing-Friendly Elliptic Curves for Cryptographic Primitives</em>"</a>
-		  
-		  <br><br>I also received my Master's degree from Jawaharlal Nehru University, where I worked on the key escrow problem in identity-based encryption.
-		  <br>Master Dissertation: <a href="https://arxiv.org/ftp/arxiv/papers/2307/2307.02411.pdf">"<em>An Approach to Remove Key Escrow Problem in ID-based Encryption from Pairing</em>"</a>
-
-			<br><br> I gained valuable teaching experience as a Lecturer in Computer Science at a Delhi Government School. I also worked as a Junior Research Fellow, funded by the prestigious Council of Scientific & Industrial Research (CSIR), providing a solid foundation for further growth. I was then appointed as a Senior Research Fellow. </p>
         </div>
       
 	  
@@ -155,7 +105,7 @@
     </div>
 
 	  <!-- FOOTER -->
-    <div id="footer" style="background-color: Thistle ;">
+    <div id="footer" style="background-color: '#464040' ;">
 	
 	<a class="icon-link" target="_blank" href="https://scholar.google.co.in/citations?user=4syrB4UAAAAJ&hl=en">
         <image src="./assets/icons/googlescholar.png" class="footer-icon"/>
