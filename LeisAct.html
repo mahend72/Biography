@@ -12,98 +12,37 @@
     <link rel="stylesheet" href="./css/typography.css">
     <link rel="stylesheet" href="./css/utilities.css">
 
-	<style>
-    body {
-      background-color:#f2f2f2  ;
-      color: black;
-    }
-    p {
-      text-align: justify;
-      line-height: 1.5;
-    }
-
-    /* Set the link color to white */
-    a {
-      color: white;
-    }
-
-    /* Set the link hover color to a different color, e.g., light gray */
-    a:hover {
-      color: lightgray;
-    }
-
-    /* Set the button background color to white */
-    .button {
-      background-color: white;
-    }
-
-    /* Set the button text color to black */
-    .button-text {
-      color: black;
-    }
-
-    /* Set the arrow icon color to black */
-    .right-arrow-icon {
-      fill: black;
-    }
-
-    /* Style for the hover button */
-    .hover-button {
-      display: none;
-      position: fixed;
-      left: 20px; /* Adjust the left position as needed */
-      bottom: 20px;
-      background-color: SteelBlue ;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      cursor: pointer;
-      border-radius: 5px;
-      z-index: 9999;
-    }
-
-    .hover-button:hover {
-      background-color: lightblue;
-    }
-  </style>
-
 		<script defer src="./js/script.js"></script>
 	</head>
 
 	<body>
-    <!-- NAVBAR -->
+    
+	<!-- NAVBAR -->
     <div class="navbar"style="background-color: #404040 ;" >
-      <a class="nav-title-link" href="./index.html">
-        <!-- TODO - Change the "Portfolio Title" to whatever you want displayed in the top left -->
-        
-		<img src="./assets/images/Mahender1.jpg" class="circular-image-container-nav" width="50" height="50">
-		
-		
-	<a class="button" href="./Publication.html" style="background-color: CadetBlue  ;"> 
-          <span class="button-text">Publications</span>
-		
-	<a class="button" href="./Experiences.html" style="background-color: Thistle   ;">
-          <span class="button-text">Experiences</span>
-		
-	<a class="button" href="./Projects.html" style="background-color: CadetBlue;">
-          <span class="button-text">Projects</span>
+  <a class="nav-title-link" href="./index.html">
+    <!-- TODO - Change the "Portfolio Title" to whatever you want displayed in the top left -->
+    <img src="./assets/images/Mahender1.jpg" class="circular-image-container-nav" width="50" height="50">
+  </a>
 
-	<a class="button" href="./ProAct.html" style="background-color: Lavender ;">
-          <span class="button-text">Professional Activities</span>
+  <!-- Dropdown menu for Publications -->
+  <div class="dropdown">
+    <a class="button"><span class="button-text">Check out my complete profile</span></a>
+    <div class="dropdown-content">
+      <a href="./Publication.html" style="background-color: #555555   ;">Publications</a>
+      <a href="./Experiences.html" style="background-color: #666666  ;">Experiences</a>
+      <a href="./Projects.html" style="background-color: #999999;">Projects</a>
+	  <a href="./ProAct.html" style="background-color: #CCCCCC ;">Professional Activities</a>
+      <a href="./Award.html" style="background-color: #DDDDDD;">Awards and Fundings</a>
+      <a href="./LeisAct.html" style="background-color: #E5E5E5 ;">Leisure Activities</a>
 
-	<a class="button" href="./Award.html" style="background-color: CadetBlue;">
-          <span class="button-text">Awards and Fundings</span>
-
-	<a class="button" href="./LeisAct.html" style="background-color: LemonChiffon ;">
-          <span class="button-text">Leisure Activities</span>
-		
-         <!-- TODO - Change the email after 'mailto:' to your email address for contact -->
-        <a class="button" href="./Contact.html" style="background-color: CadetBlue;">
-          <span class="button-text">Contact Me</span>
-        </a>
-      </a>
     </div>
+  </div>
 
+  <!-- Contact Me button -->
+  <a class="button" href="./Contact.html">
+    <span class="button-text">Contact Me</span>
+  </a>
+</div>
     <!-- MAIN PAGE CONTENT -->
     <div id="main-content">
 
@@ -118,7 +57,7 @@
 
 
     <!-- FOOTER -->
-    <div id="footer" style="background-color: Thistle ;">
+    <div id="footer" style="background-color: '#464040' ;">
 	
 	<a class="icon-link" target="_blank" href="https://scholar.google.co.in/citations?user=4syrB4UAAAAJ&hl=en">
         <image src="./assets/icons/googlescholar.png" class="footer-icon"/>
