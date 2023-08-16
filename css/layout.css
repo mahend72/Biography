@@ -1,243 +1,150 @@
-* {
-  box-sizing: border-box;
-}
-
-html {
-  text-size-adjust: none;
-  -webkit-text-size-adjust: none;
-  -moz-text-size-adjust: none;
-  -ms-text-size-adjust: none;
-}
-
 body {
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background-color:#f2f2f2 ;
+      color: black;
+    }
+    p {
+      text-align: justify;
+      line-height: 1.5;
+    }
+	
+	li {
+      text-align: justify;
+      line-height: 1.5;
+    }
+
+    /* Set the link color to white */
+    a {
+      color: blue;
+    }
+
+    /* Set the link hover color to a different color, e.g., light gray */
+    a:hover {
+      color: lightgray;
+    }
+
+    /* Set the button background color to white */
+    .button {
+      background-color: #E5E5E5;
+    }
+
+    /* Set the button text color to black */
+    .button-text {
+      color: black;
+    }
+
+    /* Set the arrow icon color to black */
+    .right-arrow-icon {
+      fill: black;
+    }
+
+    /* Style for the hover button */
+    .hover-button {
+      display: none;
+      position: fixed;
+      left: 20px; /* Adjust the left position as needed */
+      bottom: 20px;
+      background-color: #AB9D92 ;
+      color: black
+      padding: 10px 20px;
+      border: black;
+      cursor: pointer;
+      border-radius: 10px;
+      z-index: 9999;
+    }
+
+    .hover-button:hover {
+      background-color: lightblue;
+    }
+
+.nav-title {
+  font-weight: 700;
+  font-size: 24px;
 }
 
-.circular-image-container {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
+.button-text {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.image-caption {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.main-title {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.subheader-text {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.body-text {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.project-card-text {
   overflow: hidden;
-  margin-bottom: 1rem;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
 }
 
-.circular-image-container-nav {
-  width: 60px;
-  height: 50px;
-  border-radius: 50%;
+.project-title {
   overflow: hidden;
-  margin-bottom: 0.01rem;
-}
-
-.circular-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 
 
-/* Main Page Layout */
+/* ... your existing styles ... */
 
-#main-content {
-  margin: 225px 425px;
-  display: flex;
-  flex-direction: column;
-  gap: 96px;
-}
-
-
-
-
-/* Portfolio Header */
-
-#portfolio-header {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-
-#portfolio-header-image-container {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  flex-basis: 50%;
-}
-
-.portfolio-header-image {
-  width: 100%;
-  height: auto;
-}
-
-#portfolio-header-text-container {
-  display: flex;
-  flex-direction: column;
-  gap: 34px;
-  flex-basis: 50%;
-}
-
-
-
-
-/* About Section */
-
-#about-section {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.about-section-content {
-  display: flex;
-  flex-direction: column;
-  gap: 34px;
-}
-
-
-
-
-/* Project Section */
-
-#my-work-section {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.projects-container {
-  display: flex;
-  gap: 34px 16px;
-  flex-wrap: wrap;
-}
-
-    /* Project Cards */
-
-    .project-card {
-      max-width: calc((100% - 32px) / 3);
-      display: flex;
-      flex-direction: column;
-      gap: 34px;
-    }
-
-    .project-card-text-container {
-      flex-direction: column;
-      display: flex;
-      gap: 16px
-    }
-
-    .project-image {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      object-position: center;
-    }
-
-
-
-
-/* Project Pages */
-
-#project-header {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.project-header-image {
-  width: 100%;
-  height: auto;
-}
-
-#project-details {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.project-details-content {
-  display: flex;
-  flex-direction: column;
-  gap: 34px;
-}
-
-    /* Project Gallery */
-
-    #project-gallery {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-
-    .project-gallery-content {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 34px 16px;
-    }
-
-    .gallery-image-container {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    .gallery-image-container.half-width {
-      width: calc((100% - 16px) / 2);
-    }
-
-    .gallery-image {
-      width: 100%;
-      height: auto;
-    }
-
-
-/* Extra Extra large devices (large laptops and desktops, 1200px and below) */
-@media only screen and (max-width: 1600px) {
-  #main-content {
-    margin: 225px 275px;
-  }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and below) */
-@media only screen and (max-width: 1200px) {
-  #main-content {
-    margin: 225px 175px;
-  }
-}
-
-/* Large devices (laptops/desktops, 1000px and below) */
-@media only screen and (max-width: 1000px) {
-  #main-content {
-    margin: 225px 75px;
-  }
-}
-
-/* Small devices (portrait tablets and large phones, 800px and below) */
-@media only screen and (max-width: 800px) {
-  #main-content {
-    margin: 150px 50px;
+  /* Style for the dropdown */
+  .dropdown {
+    position: relative;
+    display: inline-block;
   }
 
-  #portfolio-header {
-    flex-direction: column;
+  /* Style for the dropdown button */
+  .dropbtn {
+    background-color: CadetBlue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
   }
 
-  .project-card {
-    max-width: calc((100% - 16px) / 2);
-  }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and below) */
-@media only screen and (max-width: 600px) {
-  #main-content {
-    margin: 125px 20px;
+  /* Style for the dropdown content */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
   }
 
-  .project-card {
-    max-width: 100%;
+  /* Style for the dropdown options (links) */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
   }
-}
 
+  /* Change color of dropdown options on hover */
+  .dropdown-content a:hover {
+    background-color: LightSteelBlue;
+  }
 
-
+  /* Show dropdown content when hovering over dropdown button */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
